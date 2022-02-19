@@ -3,7 +3,9 @@ const router = express.Router();
 const slugify = require('slugify');
 const db = require('../config/db.js')
 
-
+/**
+* @router Type("post") 
+*/
 router.post("/create", (req, res) => {
     const {name} = req.body;
     // console.log(name);
@@ -21,12 +23,10 @@ router.post("/create", (req, res) => {
         return res.status(400).json({ msg: "Course Exists" });
 
     }
-
     const data = {
         course_name: name.toLowerCase(),
         slug: slugify(name).toLowerCase(),
     };
-
     db.query(sqlInsert, data, (err, result) => {
         if (err) {
             return res.status(401).json({ msg: "Unable to store data" });
@@ -35,6 +35,14 @@ router.post("/create", (req, res) => {
         });
     });
 
+});
+
+// read
+router.get("/", (req, res) => {
+    let getQuery = `SELECT * FROM courses`;
+    db.query(getQuery, (err,results) => {
+        return res.status(200).json(results);
+    });
 });
 
 module.exports = router;
