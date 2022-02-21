@@ -13,10 +13,10 @@ router.post("/create", (req, res) => {
     // simple Validation
     if(!name) return res.status(400).json({msg: "Please enter a course name"})
 
- // sql for user
- let sqlCheck = `SELECT * from courses WHERE slug = ?`;
- let sqlInsert = "INSERT INTO courses SET ?";
- const slug = slugify(name).toLowerCase();
+    // sql for user
+    let sqlCheck = `SELECT * from courses WHERE slug = ?`;
+    let sqlInsert = "INSERT INTO courses SET ?";
+    const slug = slugify(name).toLowerCase();
 
     db.query(sqlCheck, slug, (err, course) => {
     if (course.length > 0){
