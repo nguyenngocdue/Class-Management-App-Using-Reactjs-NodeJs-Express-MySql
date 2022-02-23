@@ -17,7 +17,7 @@ if (process.NODE_ENV !== "production") {
 
 /* Use Routes */
 app.use("/api/course", require("./routes/courses"));
-app.use("/api/class", require("./routes/class"));
+app.use("/api/class", require("./routes/classes"));
 app.use("/api/student", require("./routes/students"));
 
 const port = process.env.PORT || 5000;
