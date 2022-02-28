@@ -14,7 +14,8 @@
 
 **Step 1:** 	npm i react
 
-**Step 2 :** 	npm start
+**Step 2 :** 	
+              npm start
               
               yarn start
 
