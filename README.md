@@ -15,8 +15,7 @@
 **Step 1:** 	npm i react
 
 **Step 2 :** 	npm start
-
-    yarn start
+                yarn start
 
 **Step 3 :** Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
 
