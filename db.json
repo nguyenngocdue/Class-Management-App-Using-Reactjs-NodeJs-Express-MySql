@@ -1,0 +1,12 @@
+{
+    "courses": [
+        {
+            "course_id": 1,
+            "uid": "",
+            "course_name": "english language",
+            "course_students": "",
+            "slug": "english-language"
+        }
+    ]
+
+}
