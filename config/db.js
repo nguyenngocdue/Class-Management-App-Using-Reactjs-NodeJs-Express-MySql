@@ -5,14 +5,14 @@ var db;
 connectDatabase = () => {
   if (!db) {
     db = mysql.createConnection({
-      host: process.env.DBHOST,
-      database: process.env.DBNAME,
-      user: process.env.DBUSER,
-      password:  process.env.DB_PASS,
-      // host: "us-cdbr-east-05.cleardb.net",
-      // user: "baf95f51e8e853",
-      // password:  "271e1603",
-      // database: "heroku_056284627c926ae",
+      // host: process.env.DBHOST,
+      // database: process.env.DBNAME,
+      // user: process.env.DBUSER,
+      // password:  process.env.DB_PASS,
+      host: "us-cdbr-east-05.cleardb.net",
+      user: "b7bafd4bb9f161",
+      password:  "c12b8433",
+      database: "heroku_5d1510ed175ce44",
     });
     db.connect(function (err) {
       if (!err) {

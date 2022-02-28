@@ -15,6 +15,7 @@ if (process.NODE_ENV !== "production") {
   app.use(morgan("dev"));
 }
 
+
 /* Use Routes */
 app.use("/api/course", require("./routes/courses"));
 app.use("/api/class", require("./routes/classes"));
