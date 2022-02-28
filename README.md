@@ -12,16 +12,31 @@
 
 > In "client" folder:
 
-**Step 1:** 	
+**Step 1:**
+
+<<<<<<< HEAD
 
 ```
 npm i react
 ```
 
-**Step 2 :** 	
+**Step 2 :**
 
-    npm start
+npm start
     yarn start
+==============
+
+**Step 2 :** 
+              yarn start
+              npm start
+
+>>>>>>> 13d25dfdbd87b5de78bb6bf3bae48af5921b9a4f
+>>>>>>>
+>>>>>>
+>>>>>
+>>>>
+>>>
+>>
 
 **Step 3 :** Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
 
@@ -30,13 +45,13 @@ You will also see any lint errors in the console.
 
 > chekout client folder
 
-**Step 1:** 	
+**Step 1:**
 
 ```
 npm i react
 ```
 
-**Step 2 :** 	
+**Step 2 :**
 
 ```
 npm run dev
@@ -45,9 +60,8 @@ npm run dev
 > *You have to install:*
 
 + Xampp control panel v3.3.0
-
 + MySQL Workbench 8.0 CE    + All packages in pakage.jon file must be of the correct version.
 
 ---
 
-**You can see that app at myHeruko link:** 
+**You can see that app at myHeruko link:**
