@@ -25,9 +25,9 @@ const LinkButton = (props) => {
   )
 }
 
-// LinkButton.propTypes = {
-//   to: PropTypes.string.isRequired,
-//   children: PropTypes.node.isRequired
-// }
+LinkButton.propTypes = {
+  to: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired
+}
 
 export default LinkButton
