@@ -9,7 +9,7 @@ const {v4: uuidV4} = require('uuid');
 * Create a class 
 */
 
-router.post("/create", (req, res)=> {
+router.post("https://class-managementapp.herokuapp.com/create", (req, res)=> {
     const {name} = req.body;
 
     // Simple Validation
@@ -46,7 +46,7 @@ router.post("/create", (req, res)=> {
 * @router Type("get")
 * Get all the class 
 */
-router.get("/", (req, res) => {
+router.get("https://class-managementapp.herokuapp.com/", (req, res) => {
     let getQuery = `SELECT * FROM classes`;
     db.query(getQuery, (err,results) => {
         return res.status(200).json(results);
@@ -58,7 +58,7 @@ router.get("/", (req, res) => {
 * @router Type("update") 
 * Update a class
 */
-router.put("/", (req, res) => {
+router.put("https://class-managementapp.herokuapp.com/", (req, res) => {
     const {class_name, slug} = req.body;
     const newSlug = slugify(class_name).toLowerCase();
 
@@ -80,7 +80,7 @@ router.put("/", (req, res) => {
 * @router Type("Delete") 
 * Delete a class
 */
-router.delete("/", (req, res) => {
+router.delete("https://class-managementapp.herokuapp.com/", (req, res) => {
     const {class_id} = req.body;
     let delQuery = `DELETE FROM classes WHERE class_id = ?`;
     
