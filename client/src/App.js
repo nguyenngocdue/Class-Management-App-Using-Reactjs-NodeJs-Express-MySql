@@ -89,10 +89,12 @@ const HomeComponet = () => {
             </>
           ) : (
             <div>
-              <h3>No Course Available</h3>
-              <Link to="/create-course">
-                <h4>Create a Course</h4>
-              </Link>
+              <h3 style={{color : "red"}}>No Course Available</h3>
+              <Button ariant="primary" >
+                <Link to="/create-course">
+                  <h4 style={{color : "white"}}>Create a Course</h4>
+                </Link>
+              </Button>
             </div>
           )}
         </div>

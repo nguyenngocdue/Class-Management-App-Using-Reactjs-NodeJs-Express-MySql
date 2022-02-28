@@ -104,8 +104,9 @@ function ViewClass() {
                   Delete Class <i class='fas fa-trash-alt'></i>
                 </button>
                 <ToastContainer
-                  position="top-left"
+                  position="top-right"
                   autoClose={5000}
+                  theme = "colored"
                  />
               </div>
             </div>

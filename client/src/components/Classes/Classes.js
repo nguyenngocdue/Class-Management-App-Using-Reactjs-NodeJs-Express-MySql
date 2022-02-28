@@ -34,9 +34,9 @@ const Classes = () => {
             </ul>
           ) : (
             <div>
-              <h3>No Course Available</h3>
+              <h3 style={{color : "red"}}>No Class Available</h3>
               <br />
-              <Button>
+              <Button ariant="primary">
                 <Link to="/create-class">Create a class</Link>
               </Button>
             </div>

@@ -33,7 +33,7 @@ const Courses = () => {
             </ul>
           ) : (
             <div>
-              <h3>No Course Available</h3>
+              <h3 style={{color : "red"}}>No Course Available</h3>
               <br />
               <Button>
                 <Link to="/create-course"> Create a course</Link>
