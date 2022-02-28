@@ -58,7 +58,7 @@ router.get("https://class-managementapp.herokuapp.com/", (req, res) => {
 * @router Type("update") 
 * Update a class
 */
-router.put("https://class-managementapp.herokuapp.com/", (req, res) => {
+router.put("/", (req, res) => {
     const {class_name, slug} = req.body;
     const newSlug = slugify(class_name).toLowerCase();
 
