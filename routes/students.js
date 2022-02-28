@@ -9,7 +9,7 @@ const {v4: uuidV4} = require('uuid');
 * Create a student 
 */
 
-router.post("https://vast-ridge-96173.herokuapp.com/create", (req, res)=> {
+router.post("/create", (req, res)=> {
     const {name, age, courses, className} = req.body;
     //Simple Validation
     if (!name|| !age || !courses || !className){
@@ -48,7 +48,7 @@ router.post("https://vast-ridge-96173.herokuapp.com/create", (req, res)=> {
 * @router Type("get")
 * Get all the student 
 */
-router.get("https://vast-ridge-96173.herokuapp.com/", (req, res) => {
+router.get("/", (req, res) => {
     let getQuery = `SELECT * FROM students`;
     db.query(getQuery, (err,results) => {
         return res.status(200).json(results);
@@ -60,7 +60,7 @@ router.get("https://vast-ridge-96173.herokuapp.com/", (req, res) => {
 * @router Type("update") 
 * Update a student
 */
-router.put("https://vast-ridge-96173.herokuapp.com/", (req, res) => {
+router.put("/", (req, res) => {
     const {name, age, courses, className, slug, uid} = req.body;
     const newSlug = slugify(name).toLowerCase();
 
@@ -83,7 +83,7 @@ router.put("https://vast-ridge-96173.herokuapp.com/", (req, res) => {
 })
 
 
-router.delete("https://vast-ridge-96173.herokuapp.com/:uid", (req, res) => {
+router.delete("/:uid", (req, res) => {
     const { uid } = req.params;
     let delQuery = "DELETE FROM students WHERE uid = ?";
     db.query(delQuery, [uid], (err) => {
