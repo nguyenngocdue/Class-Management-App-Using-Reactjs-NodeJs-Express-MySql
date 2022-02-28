@@ -14,34 +14,23 @@
 
 **Step 1:**
 
-<<<<<<< HEAD
-
 ```
 npm i react
 ```
 
 **Step 2 :**
 
+```
 npm start
-    yarn start
-==============
-
-**Step 2 :** 
-              yarn start
-              npm start
-
->>>>>>> 13d25dfdbd87b5de78bb6bf3bae48af5921b9a4f
->>>>>>>
->>>>>>
->>>>>
->>>>
->>>
->>
+yarn start
+```
 
 **Step 3 :** Open [http://localhost:3000](http://localhost:3000/) to view it in the browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
+
+---
 
 > chekout client folder
 
