@@ -4,9 +4,7 @@
 
 ---
 
-
-
-![1646011813519.png](image/README/1646011813519.png)
+![1646012985328.png](image/README/1646012985328.png)
 
 ---
 
@@ -35,9 +33,7 @@ You will also see any lint errors in the console.
 
     + Xampp control panel v3.3.0
 
-    + MySQL Workbench 8.0 CE
-
-    + All packages in pakage.jon file must be of the correct version.
+    + MySQL Workbench 8.0 CE    + All packages in pakage.jon file must be of the correct version.
 
 ---
 
