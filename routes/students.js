@@ -82,4 +82,17 @@ router.put("/", (req, res) => {
     })
 })
 
+
+router.delete("/:uid", (req, res) => {
+    const { uid } = req.params;
+    let delQuery = "DELETE FROM students WHERE uid = ?";
+    db.query(delQuery, [uid], (err) => {
+      if (err) {
+        res.send(err).status(400);
+      } else {
+        res.json({ success: true }).status(200);
+      }
+    });
+  });
+
 module.exports = router;
